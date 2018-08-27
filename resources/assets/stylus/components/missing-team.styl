@@ -1,0 +1,26 @@
+.missing
+  &__centerWrapper
+    position absolute
+    top 50%
+    // left s($navSize)
+    left 0
+    right 0
+    transform translateY(-50%)
+    padding 0
+    text-align: center
+  &__title
+    font-weight: 500
+    color $cBlue
+    margin-bottom s(10, 20)
+    margin-top s(20, 20)
+  & p
+    max-width s(305, 14)
+    margin 0 auto s(20)
+
+.createTeamModal
+  &__title
+    @extend .title__subtitle
+    padding-left 0
+    padding-top 10px
+    font-size 13px
+    padding-bottom 10px

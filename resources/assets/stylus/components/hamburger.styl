@@ -1,0 +1,34 @@
+.bt-menu-trigger {
+  display: inline-block
+  background-color: $cLayoutLight
+  border-radius 15px
+  width: 36px
+  height: 36px
+  margin-right: s(40)
+}
+
+.bt-menu-trigger span {
+	width: 20px
+height: 2px
+background-color: $cWhite
+display: flex
+margin: 6px auto
+transition: all 0.3s ease-in-out
+border-radius 15px
+}
+
+.bt-menu-trigger span:before {
+	transform: translateY(-0.5em);
+}
+
+.bt-menu-trigger span:after {
+	transform: translateY(0.5em);
+}
+
+.bt-menu-trigger.bt-menu-open span:after {
+	transform: translateY(-0.35em) translateX(0.65em) rotate(45deg) scaleX(0.6);
+}
+
+.bt-menu-trigger.bt-menu-open span:before {
+	transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+}

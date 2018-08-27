@@ -1,0 +1,70 @@
+html
+  overflow-x: hidden
+  // overflow: hidden;
+  // height: 100%;
+  // background-image: url( '../img/grid.png' )
+  background-repeat: repeat-y
+  background-position: center center
+  //background-size: 1150px
+  height 100%
+  // background #F5F5F5
+  // opacity: 0.9
+
+body
+  width: 100%
+  height: 100%
+  background-color $cWhite
+  //overflow: hidden
+
+html *
+  font-size: s( $ws_sBaseFont )
+  font-family: $roboto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  //color: $cBlack
+
+a
+  text-decoration: none
+  color: inherit
+  font-size: inherit
+
+  &:focus
+    outline: none
+
+em, strong, b, u
+  color: inherit
+  font-size: inherit
+
+abbr
+  border: none
+  text-decoration: none
+
+
+img
+  max-width: 100%
+  height: auto
+
+button&:focus
+  outline none
+
+main.main-content
+  position: relative
+  display: block
+
+.el-main
+  padding 0
+
+.containerRouterTop
+  margin-top s(80)
+
+.containerRouterLeft
+  margin-left 300px
+  padding-right s(40)
+
+.pagination
+  .el-pagination
+    margin: s(50) auto
+
+
+  

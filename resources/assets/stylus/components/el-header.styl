@@ -1,0 +1,67 @@
+.el-header--app
+  position fixed
+  width 100%
+  z-index 2001
+.el-header
+  background $cLayoutDark
+  padding s(20) s(30)
+.el-navbar
+  clearfix()
+  color: alpha($cWhite, 0.8)
+  &__logout
+    color $cDanger
+  &__logout:not(.is-disabled):hover
+  &__logout:not(.is-disabled):focus
+    background $cDanger + 85%
+    color $cDanger - 10%
+  &__profile-info
+    display: flex
+    flex-direction: row
+    align-items: center
+    cursor: pointer
+    & img 
+      border-radius 15px
+  &__profile-name
+    font-size: s(14,14)
+    color: alpha($cWhite, 0.8)
+    font-weight: 400
+    &:hover
+      cursor: pointer
+  &__right
+    float: right
+    display: flex
+  &__icons
+    display: flex
+  &__icons-bloc
+    width: 36px
+    height: 36px
+    border: 1px solid $cBorderIcons
+    border-radius 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: s(20)
+    &--svg
+      background-color: $cBorderIcons
+    &:hover
+      text-decoration none
+    & i
+      font-size: s(18)
+      color: $cBorderIcons
+    & svg 
+      width: 18px
+      height: 18px
+  &__title
+    display: inline-block
+    margin-right 7%
+    text-transform: uppercase
+    font-size: s(14)
+  &__current-team
+    color: alpha($cWhite, 0.8)
+    font-size: s(20)
+    font-weight: 300
+    &:hover
+      cursor: pointer
+
+
+

@@ -1,0 +1,147 @@
+.planSwitch
+  display: block
+  text-align: center
+  margin-bottom s(30)
+
+.planCard
+  position: relative
+  max-width s(260)
+  border s(1) solid $baseBorder
+  border-radius s(4)
+  padding s(30) s(10)
+  text-align: center
+  flex 1
+  transition .3s ease border-color
+  &--success
+    border-color $cSuccess
+    transition .3s ease border-color
+  &--resume
+    border-color $cWarning
+    transition .3s ease border-color
+  &:first-child
+    margin-right s(15)
+  &:last-child
+    margin-left s(15)
+
+  &__container
+    display: flex
+    justify-content center
+
+  &__name
+    display: block
+    color $cBlue
+    font-weight: 700
+    font-size s(22)
+    margin-bottom s(20, 22)
+
+  &__pricing
+    display: flex
+    justify-content center
+
+  &__price
+    font-size s(38)
+    font-weight: 300
+
+  &__currency
+    color $cBlue
+    font-weight: 300
+    font-size s(20)
+    margin-top s(4, 20)
+    margin-right s(2, 20)
+
+  &__type
+    display: block
+    font-weight 300
+    font-size s(14)
+    color $cInfo
+    margin-bottom s(20, 14)
+    margin-top s(5, 14)
+
+  &__feature
+    margin-bottom s(20)
+    &:before
+      content ''
+      display: block
+      max-width s(20)
+      height s(1)
+      background-color $baseBorder
+      margin 0 auto s(20)
+    span
+      display: block
+      font-size s(14)
+      color $regularText
+      margin-bottom s(7)
+      &:last-child
+        margin-bottom: 0
+
+  & .el-button:hover, .el-button:focus
+    outline none
+  & .el-button.no-plain
+    color $cWhite
+    background-color $cBlue
+    border-color $cBlue
+    transition .3s ease all
+  & .el-button.no-plain--success
+    color $cWhite
+    background-color $cSuccess
+    border-color $cSuccess
+    transition .3s ease all
+  & .el-button.no-plain--warning
+    color $cWhite
+    background-color $cWarning
+    border-color $cWarning
+    transition .3s ease all
+  & .el-button--text
+    padding 0
+    &:hover
+    &:focus
+      text-decoration none
+
+    & del
+      color $cBlue
+
+  &__promo
+    line-height 15px
+    &Wrapper
+      position: absolute
+      display: flex
+      justify-content center
+      width: 100%
+      top -4px
+      left: 0
+
+  &__vat
+    display: block
+    text-align: center
+    color $cInfo
+    font-size s(14)
+    margin-top s(20, 14)
+
+.slide-enter-active, .slide-leave-active {
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.slide-enter, .slide-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+
+#subscription-card-element
+#payment-card-element
+  box-shadow: none
+  border-radius 4px
+  border 1px solid #dcdfe6
+  color #606266
+  height 40px
+  background-color $cWhite
+  line-height: 40px
+  padding 0 15px
+  transition border-color .2s cubic-bezier(.645,.045,.355,1)
+  &:hover
+    border-color #c0c4cc
+    transition border-color .2s cubic-bezier(.645,.045,.355,1)
+  &:focus
+    border-color $cBlue !important
+    transition border-color .2s cubic-bezier(.645,.045,.355,1) !important
+

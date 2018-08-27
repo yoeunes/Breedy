@@ -1,0 +1,108 @@
+.el-tabs--left .el-tabs__item.is-left
+  text-align: left
+
+.settings-page
+  color: $regularText
+  .settings-container
+    max-width s(700)
+  .container
+    margin 0
+    margin-top s(80)
+    max-width none !important
+    padding-left: 0
+    padding-right: 0
+    &.spark-screen
+      margin-top s(80)
+      margin-left s(260)
+  .container-settings
+    padding s(30)
+    background-color: $cWhite
+    width: 100%
+  .settings-bloc-title
+    border-bottom: 1px solid $baseBorder
+    padding-bottom: s(20,24)
+    margin-bottom s(30,24)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .el-button
+      font-weight 400
+  .nav
+    flex-direction: column
+  .items
+    &__link
+      font-size: s(14)
+      font-weight 400
+      display: block
+      padding: s(30,14)
+      position: relative
+      transition: .3s ease-in-out
+      &:hover
+        text-decoration: none
+        color: $cBlue
+        transition: .3s ease-in-out
+        &:after
+          content: ''
+          width: 2px
+          height: 100%
+          background-color: $cBlue
+          display: block
+          position: absolute
+          right: 0
+          top: 0
+      & i 
+        margin-right s(10,14)
+  .el-form-item
+    display: flex
+    flex-direction: column
+    margin-bottom: s(15)
+    &__label
+      text-align: left
+
+  .settings-aside
+    position: fixed
+    height: calc(100vh - 80px)
+    background-color #edf0f2
+
+  .item-container
+    display: flex
+
+  .form
+    & h3 
+      padding: s(15,12) 0 s(10,12)
+    &__address
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width: 100%
+      justify-content: space-between
+      .el-form-item
+        width: 47.5%
+      .el-select
+        display: block
+
+
+.settings-page .items__link.active
+  color $cBlue
+  &:after
+    content: ''
+    width: 2px
+    height: 100%
+    background-color: $cBlue
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+
+
+
+.settings-page
+  .el-form--inline
+    .el-form-item__content
+      display: flex;
+      & .el-button
+        margin-left: 20px;
+
+.settings-page
+  .el-table th div
+    padding-left 0
